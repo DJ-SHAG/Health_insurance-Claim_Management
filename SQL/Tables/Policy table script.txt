@@ -1,0 +1,18 @@
+use sys;
+create table policy (
+p_id  int NOT NULL ,
+policy_type varchar(10),
+policy_item varchar(300),
+doctor_visit int,
+copay int,
+deductable int,
+coinsurance int,
+PRIMARY KEY (p_id)
+);
+
+
+insert into policy 
+values 
+(1,'Easy','Small Injuries , Blood Test,Sugar Test , Diabeties Test, Xray, Dentail Care',3,50,500,50),
+(2,'Meduim','Meduim Injuries , Blood Test,Sugar Test , Diabeties Test, Xray, Dentail Care ,Ultrasound Test, Thyroid Test , Electrolytes Test',6,30,300,70),
+(3,'Hard','Major Injuries , Blood Test,Sugar Test , Diabeties Test, Xray, Dentail Care ,Ultrasound Test, Thyroid Test , Electrolytes Test, Operations, Cancer Screening Test, Liver Panal Test , Bone Mineral Test(BMT)',12,10,50,90);

@@ -1,0 +1,17 @@
+DELIMITER //
+CREATE PROCEDURE Insurance_Cust_Create (
+	IN   first_name VARCHAR(25),IN  last_name VARCHAR(25),IN  phone VARCHAR(25),
+    IN  email VARCHAR(25),IN  date_of_birth VARCHAR(25),IN  national_id_1 VARCHAR(25),
+    IN  national_id_1_type VARCHAR(25),IN  national_id_2 VARCHAR(25),IN  national_id_2_type VARCHAR(25),
+    IN  policy_type VARCHAR(25),IN  street_address VARCHAR(25),IN  city VARCHAR(25),
+    IN  state VARCHAR(25),IN  postal VARCHAR(25),IN  country VARCHAR(25),
+    IN  CreateDate VARCHAR(25),IN  CreatedBy VARCHAR(25),IN  UpatedDate VARCHAR(25),IN  UpdatedBy VARCHAR(25),
+    OUT cust_id int
+)
+BEGIN
+  INSERT INTO sys.customer(first_name, last_name,phone, email,date_of_birth, national_id_1,national_id_1_type, national_id_2,national_id_2_type,
+  policy_type,street_address, city,state, postal,country, CreateDate,CreatedBy, UpatedDate,UpdatedBy) 
+  VALUES (first_name, last_name,CAST(phone as UNSIGNED), email, date_of_birth, national_id_1,national_id_1_type, national_id_2,national_id_2_type,
+  policy_type,street_address, city,state, CAST(postal as UNSIGNED),country, CreateDate ,CreatedBy,UpatedDate,UpdatedBy);
+  SET cust_id = LAST_INSERT_ID();
+END //

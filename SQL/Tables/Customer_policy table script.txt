@@ -1,0 +1,17 @@
+use sys;
+create table Customer_policy (
+cust_id  int NOT NULL ,
+policy_type varchar(15),
+state varchar(10),
+copay bigint,
+deductable bigint,
+coinsurance bigint,
+cust_pay bool,
+pol_deduct_counter int,
+doctor_visits int,
+CreateDate date,
+CreatedBy varchar(20),
+UpatedDate date,
+UpdatedBy varchar(20),
+PRIMARY KEY (cust_id)
+);

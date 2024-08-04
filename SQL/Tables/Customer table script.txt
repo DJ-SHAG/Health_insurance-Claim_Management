@@ -1,0 +1,25 @@
+use sys;
+create table Customer (
+cust_id int NOT NULL AUTO_INCREMENT,
+first_name varchar(25),
+last_name varchar(25),
+phone bigint ,
+email varchar(30),
+date_of_birth date,
+national_id_1 varchar(20),
+national_id_1_type varchar(10),
+national_id_2 varchar(20),
+national_id_2_type varchar(10),
+policy_type varchar(15),
+street_address varchar(100),
+city varchar(30),
+state varchar(10),
+postal int,
+country varchar(20),
+CreateDate date,
+CreatedBy varchar(20),
+UpatedDate date,
+UpdatedBy varchar(20),
+PRIMARY KEY (cust_id)
+);
+

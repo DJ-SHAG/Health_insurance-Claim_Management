@@ -1,0 +1,20 @@
+{
+            "First_Name":"Rohan",
+            "Last_Name":"Rana",
+            "Phone":"541-75-430",
+            "Email":"john@gmail.com",
+            "Date_Of_Birth":"1989-04-26",
+            "National_ID_1":"209-4961-923",
+            "National_ID_1_Type":"Aadhar",
+            "National_ID_2":"435-TH212H23",
+            "National_ID_2_Type":"PAN",
+            "Policy_Type":"Easy",
+            "Address":
+              {
+                "Street_Address":"Rohini delhi sector 17",
+                "City":"Delhi",
+                "State":"DL",
+                "Postal":"11089",
+                "Country":"INDIA"
+              }  
+          }
